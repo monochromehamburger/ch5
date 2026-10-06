@@ -10,8 +10,11 @@ class Quadratic{
 		System.out.println("gimme c");
 		int c=sc.nextInt();
 		int discriminant=b*b-4*a*c;
-		if(discriminant<0){
-			System.out.println("No Solutions");
+		if(a==0){
+			System.out.println("a cannot equal 0. skill issue");
+		}
+		else if(discriminant<0){
+			System.out.println("No Solutions because discriminant<0. you suck");
 		}
 		else if(discriminant==0){
 			double solution1=(-b)/(2*(double)a);
